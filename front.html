@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developed by Samaksh</title>
+    <style>
+        .class1{
+            background-image: url(images/front-background.jpg);
+            height: 400px;
+            width: 1500px;
+            border: 2px none;
+            background-repeat: no-repeat;
+            float: left;
+            background-position: right top;
+            
+        }
+        .class2{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+            width: 840px;
+            height: 400px;
+        }
+        .heading{
+            color: black;
+            text-align: center;
+            overflow: hidden;
+            background-color: aquamarine;
+        }
+        button{
+            display: block;
+            margin-bottom: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 20px 20px;
+            cursor: pointer;
+            margin-top: 10px ;
+            font-style: normal;
+            font: optional;
+            font-size: larger;
+        }
+        .text{
+            text-align: center;
+            margin: 100px 100px 50px;
+            overflow: hidden;
+            background-color: #E0F4FF;
+            text-size-adjust: 200px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        img{
+            overflow: hidden;
+            padding: 50px;
+            width: 1390px;
+            height: 500px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="heading">
+        <h1>Professional Resume <br> Builder</h1>
+    </div>
+    <div class="text">
+        <h1>Build beautiful, recruiter-tested resumes in a few clicks! Our <br>resume builder is powerful and easy to use, with a range of amazing functions. <br>Custom-tailor resumes for any job within minutes. Increase your interview chances and rise above the <br>competition.</h1>
+        <center><button id="button" name="button">Create Resume</button></center>
+    </div>
+    <div>
+        <img src="images/template.png" alt="template-image">
+    </div>
+    <div class="text">
+        <h1><b>Create a resume to land your next job</b></h1>
+        <h3>We have developed a resume builder based <br>on feedback from thousands of users, <br>recruiter expertise, stellar template design <br>and the best thing practices. The goal is simple: help you land that <br>dream job interview! Get an advantage in the modern <br>professional environment.</h3>
+        <center><button id="button1" name="button">Build your Resume</button></center>
+    </div>
+    <script>
+        document.getElementById("button").addEventListener("click", function() {
+            window.location.href = "Personal.html";
+        });
+        document.getElementById("button1").addEventListener("click", function() {
+            window.location.href = "Personal.html";
+        });
+    </script>
+</body>
+</html>

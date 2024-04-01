@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developed by Samaksh</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        label,
+        input,
+        button {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        
+        .Personal{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .button{
+            display: flex;
+            justify-content: space-between;
+        }
+        .heading{
+            color: black;
+            text-align: center;
+            overflow: hidden;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>Professional Resume <br> Builder</h1>
+    </div>
+    <form id="personalForm" action="Employment.html">
+        <h1><em><u>Personal Details</u></em></h1>
+        <label for="pfile">Image</label>
+        <input class="Personal" type="file" name="pfile" id="pfile">
+        
+        <label for="pname">Name:</label>
+        <input class="Personal" type="text" id="pname" name="pname">
+        
+        <label for="pemail">Email:</label>
+        <input class="Personal" type="email" id="pemail" name="pemail" >
+        
+        <label for="pcontact">Contact Number:</label>
+        <input class="Personal" type="tel" id="pcontact" name="pcontact" >
+
+        <label for="pdob">Date of birth:</label>
+        <input class="Personal" type="date" name="pdob" id="pdob" >
+
+        <label for="pcountry">Country:</label>
+        <input class="Personal" type="text" name="pcountry" id="pcountry" >
+
+        <label for="city">City:</label>
+        <input class="Personal" type="text" class="Personal" id="pcity" name="pcity" >
+
+        <label for="ppostal">Postal Code:</label>
+        <input class="Personal" type="number" name="ppostal" id="ppostal">
+
+        <div class="button">
+            <button type="button" id="mybutton"><a href="front.html" id="mybutton"></a>Previous</button>
+            <button type="reset">Reset</button>
+            <button type="submit">Next</button>
+        </div>
+    </form>
+    <script>
+        document.getElementById("mybutton").addEventListener("click", function() {
+            window.location.href = "front.html";
+        });
+    </script>
+</body>
+</html>
+
+    

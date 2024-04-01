@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developed by Samaksh</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        label,
+        input,
+        button {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        
+        .Personal{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .button{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <form action="Custom.html" id="webskillsform">
+        <h1><em><u>Website/Social Links:</u></em></h1>
+        <label for="wlabel">Label:</label>
+        <input type="text" name="wlabel" id="wlabel" class="Personal">
+
+        <label for="wlink">Link:</label>
+        <input type="url" name="wlink" id="wlink" class="Personal">
+
+        <h1><em><u>Skills</u></em></h1>
+        <label for="wskills">Skill:</label>
+        <input type="text" name="wskills" id="wskills" class="Personal">
+
+        <label for="wlevel">Level:</label>
+        <select name="wlevel" id="wlevel" class="Personal">
+            <option value="">Select your Skill level</option>
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Working Knowledge</option>
+            <option>Advanced</option>
+        </select>
+
+        <div class="button">
+            <button type="button" id="mybutton"><a href="Studies.html" id="mybutton"></a>Previous</button>
+            <button type="reset">Reset</button>
+            <button type="submit">Next</button>
+        </div>
+    </form>
+    <script>
+        document.getElementById("mybutton").addEventListener("click", function() {
+            window.location.href = "Studies.html";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developed by Samaksh</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        label,
+        input,
+        button {
+            display: block;
+            margin-bottom: 10px;
+        }
+        #terms,#correct{
+            float: left;
+        }
+        
+        .Personal{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .button{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" id="customform">
+        <h1><em><u>Custom Selection</u></em></h1>
+        <label for="cactivity">Activity name,job title etc.</label>
+        <input type="text" name="cactivity" id="cactivity" class="Personal">
+
+        <label for="ccity">City:</label>
+        <input type="text" name="ccity" id="ccity" class="Personal">
+
+        <label for="cstart">Start Date:</label>
+        <input type="date" name="cstart" id="cstart" class="Personal">
+
+        <label for="cend">End Date:</label>
+        <input type="date" name="cend" id="cend" class="Personal">
+
+        <label for="cdescription">Description:</label>
+        <textarea name="cdescription" id="cdescription" cols="108" rows="5" class="Personal"></textarea>
+
+        <h1><em><u>Courses</u></em></h1>
+        <label for="ccourse">Course:</label>
+        <input type="text" name="ccourse" id="ccourse" class="Personal">
+
+        <label for="cinstitution">Institution:</label>
+        <input type="text" name="cinstitution" id="cinstitution" class="Personal">
+
+        <label for="cstart">Start Date:</label>
+        <input type="date" name="cstart" id="cstart" class="Personal">
+
+        <label for="cend">End Date:</label>
+        <input type="date" name="cend" id="cend" class="Personal">
+
+        <label for="cdescription">Description:</label>
+        <textarea name="cdescription" id="cdescription" cols="108" rows="5" class="Personal"></textarea>
+
+        <h1><em><u>Extra-Curricular Activity</u></em></h1>
+        <label for="cfuntion">Function Title:</label>
+        <input type="text" name="cfuntion" id="cfuntion" class="Personal">
+
+        <label for="cinstitution">Institution:</label>
+        <input type="text" name="cinstitution" id="cinstitution" class="Personal">
+
+        <label for="cstart">Start Date:</label>
+        <input type="date" name="cstart" id="cstart" class="Personal">
+
+        <label for="cend">End Date:</label>
+        <input type="date" name="cend" id="cend" class="Personal">
+
+        <label for="ccity">City:</label>
+        <input type="text" name="ccity" id="ccity" class="Personal">
+        
+        <label for="cdescription">Description:</label>
+        <textarea name="cdescription" id="cdescription" cols="108" rows="5" class="Personal"></textarea>
+
+        <h1><em><u>Work-Experience/Internships:</u></em></h1>
+        <label for="cjob">Job Title:</label>
+        <input type="text" name="cjob" id="cjob" class="Personal">
+
+        <label for="cemployer">Employer:</label>
+        <input type="text" name="cemployer" id="cemployer" class="Personal">
+
+        <label for="cstart">Start Date:</label>
+        <input type="date" name="cstart" id="cstart" class="Personal">
+
+        <label for="cend">End Date:</label>
+        <input type="date" name="cend" id="cend" class="Personal">
+
+        <label for="ccity">City:</label>
+        <input type="text" name="ccity" id="ccity" class="Personal">
+        
+        <label for="cdescription">Description:</label>
+        <textarea name="cdescription" id="cdescription" cols="108" rows="5" class="Personal"></textarea>
+
+        <h1><em><u>Hobbies</u></em></h1>
+        <label for="chobbie">What do you like??</label>
+        <textarea name="chobbie" id="chobbie" cols="108" rows="5" class="Personal"></textarea>
+
+        <h1><em><u>Languages</u></em></h1>
+        <label for="clanguage">Language:</label>
+        <select name="clanguage" id="clanguage" class="Personal">
+            <option value="">Select your language level</option>
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Working Knowledge</option>
+            <option>Advanced</option>
+        </select>
+
+        <h1><em><u>Reference</u></em></h1>
+        <label for="creferent">Referent's Full Name:</label>
+        <input type="text" name="creferent" id="creferent" class="Personal">
+
+        <label for="ccompany">Company:</label>
+        <input type="text" name="ccompany" id="ccompany" class="Personal">
+
+        <label for="ccontact">Contact No:</label>
+        <input type="tel" name="ccontact" id="ccontact" class="Personal">
+
+        <label for="cemail">Email:</label>
+        <input type="email" name="cemail" id="cemail" class="Personal">
+
+        <input type="checkbox" name="terms" id="terms" required>
+        <label for="terms">You accept our <a href="#">terms and conditions</a>.</label>
+
+        <input type="checkbox" name="correct" id="correct" required>
+        <label for="correct">I accept that provide above information is best of my knowledge</a>.</label>
+
+        <div class="button">
+            <button type="button" id="mybutton"><a href="Webskills.html" id="mybutton"></a>Previous</button>
+            <button type="reset">Reset</button>
+            <button type="submit" id="submitbutton"><a href="Template.html" id="submitbutton"></a>Submit</button>
+        </div>
+    </form>
+    <script>
+        document.getElementById("mybutton").addEventListener("click", function() {
+            window.location.href = "Webskills.html";
+        });
+        document.getElementById("submitbutton").addEventListener("click", function() {
+            window.location.href = "Template.html";
+        });
+    </script>
+</body>
+</html>

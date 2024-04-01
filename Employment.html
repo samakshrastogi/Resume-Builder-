@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developed by Samaksh</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        label,
+        input,
+        button {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        
+        .Personal{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .button{
+            display: flex;
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="Studies.html" id="employmentform">
+        <em><u><h1>Employment Details</h1></u></em>
+        <label for="ejob">Job Title:</label>
+        <input type="text" name="ejob" id="ejob" class="Personal">
+
+        <label for="eemployer">Employer:</label>
+        <input type="text" name="eemployer" id="eemployer" class="Personal">
+
+        <label for="estart">Start Date:</label>
+        <input type="date" name="estart" id="estart" class="Personal">
+
+        <label for="eend">End Date:</label>
+        <input type="date" name="eend" id="eend" class="Personal">
+
+        <label for="ecity">City:</label>
+        <input type="text" name="ecity" id="ecity" class="Personal">
+
+        <label for="epostal">Postal Code:</label>
+        <input type="number" name="epostal" id="epostal" class="Personal">
+
+        <label for="edescription">Description:</label>
+        <textarea name="edescription" id="edescription" cols="109" rows="5"></textarea>
+
+        <div class="button">
+            <button type="button" id="mybutton"><a href="Personal.html" id="mybutton"></a>Previous</button>
+            <button type="reset">Reset</button>
+            <button type="submit">Next</button>
+        </div>
+    </form>
+    <script>
+        document.getElementById("mybutton").addEventListener("click", function() {
+            window.location.href = "Personal.html";
+        });
+    </script>
+</body>
+</html>

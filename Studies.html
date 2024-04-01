@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developed by Samaksh</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        label,
+        input,
+        button {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        
+        .Personal{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .button{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <form action="Webskills.html" id="educationform">
+        <em><u><h1>Education Details</h1></u></em>
+        <label for="sschool">School/College:</label>
+        <input type="text" name="sschool" id="sschool" class="Personal">
+
+        <label for="sdegree">Degree:</label>
+        <input type="text" name="sdegree" id="sdegree" class="Personal">
+
+        <label for="sstart">Start Date:</label>
+        <input type="date" name="sstart" id="sstart" class="Personal">
+
+        <label for="send">End Date:</label>
+        <input type="date" name="send" id="send" class="Personal">
+
+        <label for="scity">City</label>
+        <input type="date" name="scity" id="scity" class="Personal">
+
+        <label for="sdescription">Description</label>
+        <textarea name="sdescription" id="sdescription" cols="108" rows="5"></textarea>
+
+        <div class="button">
+            <button type="button" id="mybutton"><a href="Employment.html" id="mybutton"></a>Previous</button>
+            <button type="reset">Reset</button>
+            <button type="submit">Next</button>
+        </div>
+    </form>
+    <script>
+        document.getElementById("mybutton").addEventListener("click", function() {
+            window.location.href = "Employment.html";
+        });
+    </script>
+</body>
+</html>
